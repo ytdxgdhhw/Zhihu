@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextActivity" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#00A2ED" 
+    android:id="@+id/rlOne">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+    <ImageView
+        android:id="@+id/ivShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@+id/ivBack"
+        android:src="@drawable/share" />
+
+    <ImageView
+        android:id="@+id/ivCollect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/collect" 
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ivShare"/>
+      <ImageView
+        android:id="@+id/ivComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/comment" 
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ivCollect"/>
+        <ImageView
+        android:id="@+id/ivPraise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/praise" 
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ivComment"/>
+</RelativeLayout>
+ <RelativeLayout android:id="@+id/rlTwo"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/rlOne">
+     <ImageView android:layout_width="match_parent"
+         android:layout_height="200dp" 
+         android:id="@+id/ivTop"
+         android:src="@drawable/wip_bk_dust"
+         android:scaleType="fitXY"/>
+     <TextView android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="从一颗可可树苗到一块巧克力的故事（手绘多图）"
+         android:textColor="#fff"
+         android:textSize="18sp"
+         android:layout_marginTop="120dp"
+         android:padding="10dp"
+         android:maxLines="2"
+         android:id="@+id/tvText"
+         />
+  	<TextView android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="知乎"
+  	    android:id="@+id/tvCome"
+  	    android:textColor="#fff"
+  	    android:layout_alignParentRight="true"
+  	    android:layout_alignParentBottom="true"
+  	    android:padding="5dp"/>
+ </RelativeLayout>
+ <WebView android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/wvText"
+     android:layout_below="@+id/rlTwo"/>
+ 
+</RelativeLayout>
+</ScrollView>
